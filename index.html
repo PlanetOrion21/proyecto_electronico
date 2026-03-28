@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="description" content="Arriendo de equipos eléctricos en la region del biobio y por todo Chile Equipos electricos Industriales  ">
+<meta name="keywords" content="Algunos de los equipos electricos son,Micro-ohmímetro alta corriente,Equipo VLF Hipot,Analizador solar,Megóhmetro industrial,Micro-ohmímetro AEMC,Medidor de vibraciones,Pinza de proceso,Cámara térmica,Pinza amperimétrica avanzada,Pinza Hioki y Entre otros productos que les Garantiza un uso satisfactorio ">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HF Arriendo de equipos electricos Chile </title>
+
+<style>
+/* Desplazamiento suave para los anclajes del menú */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos base y tipografía moderna */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  margin: 0;
+  color: #1f2937;
+  background-color: #f3f4f6; /* Fondo gris claro limpio para destacar los equipos */
+  position: relative;
+  min-height: 100vh;
+}
+
+/* Encabezado */
+header {
+  background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+  border-bottom: 5px solid #fbbf24; /* Acento amarillo industrial tipo Fluke/DeWalt */
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+h1 { 
+  margin: 0; 
+  font-size: 2.5rem;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  color: #ddd;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Menú de navegación */
+.main-nav {
+  margin-bottom: 30px;
+}
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.main-nav a {
+  text-decoration: none;
+  color: #d1d5db; /* Gris claro */
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+.main-nav a:hover {
+  color: #fbbf24;
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Tarjetas de productos */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 25px 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e5e7eb;
+  border-bottom: 4px solid transparent;
+  cursor: pointer; /* Cambia el cursor para indicar que se puede hacer clic */
+  position: relative;
+  overflow: hidden; /* Evita que las esquinas de las etiquetas sobresalgan */
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+  border-bottom: 4px solid #fbbf24;
+}
+
+/* Etiquetas visuales flotantes por categoría */
+.card::after {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 0.70rem;
+  font-weight: 800;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+/* Colores distintos para cada categoría */
+.card[data-categoria="medicion-electrica"]::after { content: "Medición"; background: #2563eb; }
+.card[data-categoria="instrumentacion-industrial"]::after { content: "Instrumentación"; background: #d97706; }
+.card[data-categoria="temperatura-termografia"]::after { content: "Temperatura"; background: #c0392b; }
+.card[data-categoria="ensayos-seguridad"]::after { content: "Seguridad"; background: #27ae60; }
+.card[data-categoria="rotacion-redes"]::after { content: "Redes"; background: #8e44ad; }
+.card[data-categoria="medidor-general"]::after { content: "General"; background: #4b5563; }
+
+.card:hover img {
+  transform: scale(1.08);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  object-position: center; /* Asegura que la imagen esté centrada sin estirarse */
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.3rem;
+  color: #111827;
+  font-weight: 800;
+}
+
+.card p {
+  color: #4b5563;
+  flex-grow: 1;
+  margin: 0 0 15px;
+}
+
+/* Etiqueta de precio */
+.precio {
+  color: #111827;
+  font-size: 1.25rem;
+  font-weight: 800;
+  background: #fbbf24;
+  padding: 8px 16px;
+  border-radius: 6px;
+  margin-bottom: 0;
+  display: inline-block;
+}
+
+/* Botón Arrendar */
+.btn-arrendar {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #111827;
+  color: #fbbf24;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 2px solid #111827;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-arrendar:hover {
+  background: #fbbf24;
+  color: #111827;
+  transform: scale(1.03);
+}
+
+/* Estilos para estado "Arrendado" */
+.card.arrendado {
+  opacity: 0.85;
+}
+.card.arrendado img {
+  filter: grayscale(80%);
+  opacity: 0.7;
+}
+.card.arrendado::before {
+  content: "ARRENDADO";
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-15deg);
+  background: rgba(220, 53, 69, 0.95);
+  color: white;
+  padding: 10px 30px;
+  font-size: 1.4rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  z-index: 15;
+  pointer-events: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+.card.arrendado .btn-arrendar {
+  background: #7f8c8d;
+  pointer-events: none;
+}
+
+/* WhatsApp flotante */
+.whatsapp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #25D366;
+  color: white;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+  z-index: 100;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* Barra de búsqueda */
+.search-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#categoryFilter, #searchInput {
+  padding: 14px 24px;
+  font-size: 1.05rem;
+  border: 2px solid #374151;
+  background-color: #1f2937;
+  color: white;
+  border-radius: 8px;
+  outline: none;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+#categoryFilter {
+  cursor: pointer;
+}
+
+.search-input-wrapper {
+  position: relative;
+  flex: 1;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+#searchInput {
+  width: 100%;
+  padding-left: 45px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  left: 15px;
+  color: #9ca3af;
+  pointer-events: none;
+}
+
+#categoryFilter:focus, #searchInput:focus {
+  border-color: #fbbf24;
+  box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Mensaje sin resultados */
+.no-results {
+  grid-column: 1 / -1; /* Ocupa todo el ancho de la cuadrícula */
+  text-align: center;
+  padding: 60px 20px;
+  color: #6b7280;
+  display: none; /* Oculto por defecto */
+}
+.no-results svg {
+  color: #9ca3af;
+  margin-bottom: 15px;
+}
+.no-results h2 {
+  color: #111827;
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+}
+
+/* Modal (Ventana Emergente de Detalles) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; 
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  background-color: rgba(17, 24, 39, 0.85); /* Fondo oscuro industrial */
+  backdrop-filter: blur(5px);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 40px 30px 30px; /* Más espacio superior para el botón de cerrar */
+  border-radius: 8px; /* Bordes más rectos y robustos */
+  max-width: 550px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  animation: fadeIn 0.3s ease;
+  border-top: 6px solid #fbbf24; /* Acento superior amarillo */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px; 
+  right: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #9ca3af;
+  cursor: pointer;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.close-btn:hover { color: #111827; }
+
+.modal-content img { 
+  width: 100%; 
+  height: 280px; 
+  object-fit: contain; 
+  margin-bottom: 20px; 
+  background-color: #f9fafb; /* Fondo sutil estilo catálogo técnico */
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.modal-content h3 { 
+  font-size: 1.8rem; 
+  margin-bottom: 10px; 
+  color: #111827;
+  font-weight: 800;
+}
+
+.modal-content p.desc { 
+  color: #4b5563; 
+  margin-bottom: 25px; 
+  line-height: 1.6; 
+  font-size: 1.05rem;
+}
+
+.modal-content .precio { 
+  display: inline-block; 
+  margin-bottom: 25px; 
+  font-size: 1.4rem;
+}
+
+/* Botón Volver Arriba */
+.volver-arriba {
+  position: fixed;
+  bottom: 110px; /* Posicionado justo encima de WhatsApp */
+  right: 37px; /* Alineado al centro con el botón de WhatsApp */
+  background-color: rgba(17, 17, 17, 0.85);
+  backdrop-filter: blur(5px);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none; /* Oculto por defecto */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 99;
+}
+
+.volver-arriba:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+/* Footer (Pie de página) */
+footer {
+  background-color: #1a1a1a;
+  color: #ddd;
+  padding: 50px 20px 20px;
+  margin-top: 50px;
+  text-align: center;
+  box-shadow: 0 -4px 15px rgba(0,0,0,0.3);
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h4 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.footer-section p {
+  margin: 8px 0;
+  font-size: 0.95rem;
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  font-size: 0.85rem;
+  color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#catalogo">Catálogo</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <h1>Arriendo de Equipos Eléctricos</h1>
+  <p>Concepción - Coronel - San Pedro</p>
+  <div class="search-container">
+    <select id="categoryFilter">
+      <option value="todas">Todas las categorías</option>
+      <option value="medicion-electrica">Medición Eléctrica</option>
+      <option value="instrumentacion-industrial">Instrumentación Industrial</option>
+      <option value="temperatura-termografia">Temperatura y termografía</option>
+      <option value="ensayos-seguridad">Ensayos y seguridad</option>
+      <option value="rotacion-redes">Rotación y Redes</option>
+      <option value="medidor-general">Medidor En general</option>
+    </select>
+    <div class="search-input-wrapper">
+      <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="text" id="searchInput" placeholder="Buscar equipo (ej. Multímetro, Pinza)...">
+    </div>
+  </div>
+</header>
+
+<div class="container" id="catalogo">
+
+<!-- ================= MEDICIÓN ELÉCTRICA ================= -->
+
+<div class="card arrendado" data-categoria="medicion-electrica" data-descripcion="Pinza amperimétrica profesional True RMS que permite medir corriente AC/DC sin interrumpir el circuito. Soporta altas corrientes (hasta aprox. 2000A) y también mide voltaje, resistencia y frecuencia. Ideal para diagnóstico en tableros eléctricos, mantenimiento industrial y sistemas de potencia.">
+  <img src="images/Pinza_amperimétrica.jpg" alt="Pinza amperimétrica HIOKI CM4374">
+  <h3>Pinza amperimétrica</h3>
+  <p>HIOKI CM4374</p>
+  <p class="precio">$20.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Pinza%20amperimétrica%20HIOKI%20CM4374" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="medicion-electrica" data-descripcion="Equipo de alta precisión que mide corriente AC/DC y frecuencia, incluyendo sonda flexible para conductores de gran tamaño o espacios reducidos. Permite trabajar en sistemas de alta carga de forma segura, siendo ideal para instalaciones industriales y tableros eléctricos complejos.">
+  <img src="images/fluke_376.jpg" alt="Pinza amperimétrica Fluke 376">
+  <h3>Pinza amperimétrica</h3>
+  <p>Fluke 376</p>
+  <p class="precio">$20.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Pinza%20amperimétrica%20Fluke%20376" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="medicion-electrica" data-descripcion="Multímetro digital True RMS para medición de voltaje AC/DC, corriente, resistencia, continuidad y frecuencia. Destaca por su confiabilidad y precisión, siendo ideal para mantenimiento eléctrico general y diagnóstico en terreno.">
+  <img src="images/fluke_175.jpg" alt="Multímetro Fluke 175">
+  <h3>Multímetro</h3>
+  <p>Fluke 175</p>
+  <p class="precio">$12.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Multímetro%20Fluke%20175" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="medicion-electrica" data-descripcion="Multímetro profesional True RMS diseñado para condiciones exigentes (IP65). Permite medir voltaje, corriente, resistencia y frecuencia, con alta resistencia a golpes, polvo y humedad. Ideal para trabajo en terreno e industria.">
+  <img src="images/uni_t_ut_195ds.jpg" alt="Multímetro industrial UNI-T">
+  <h3>Multímetro industrial</h3>
+  <p>UNI-T UT195DS</p>
+  <p class="precio">$10.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Multímetro%20UNI-T%20UT195DS" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= INSTRUMENTACIÓN INDUSTRIAL ================= -->
+
+<div class="card" data-categoria="instrumentacion-industrial" data-descripcion="Calibrador multifunción capaz de medir y simular señales de corriente (4-20 mA), voltaje, resistencia, termocuplas (TC) y RTD. Permite calibrar transmisores, sensores y equipos de control industrial, siendo una herramienta clave en instrumentación.">
+  <img src="images/fluke_725.jpg" alt="Calibrador de procesos Fluke 725">
+  <h3>Calibrador de procesos</h3>
+  <p>Fluke 725</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Calibrador%20de%20procesos%20Fluke%20725" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="instrumentacion-industrial" data-descripcion="Permite medir corriente de lazo (4-20 mA) sin abrir el circuito, además de generar señales para pruebas. Ideal para diagnóstico y mantenimiento de sistemas de control industrial sin detener procesos.">
+  <img src="images/fluke_773.jpg" alt="Pinza de proceso Fluke 773">
+  <h3>Pinza de proceso</h3>
+  <p>Fluke 773</p>
+  <p class="precio">$25.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Pinza%20de%20proceso%20Fluke%20773" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="instrumentacion-industrial" data-descripcion="Módulo de medición de presión de alta precisión (hasta 1500 PSI / 103 bar). Se utiliza junto a calibradores para verificar sensores y transmisores de presión en procesos industriales.">
+  <img src="images/fluke_700p.jpg" alt="Módulo de presión Fluke 700P09">
+  <h3>Módulo de presión</h3>
+  <p>Fluke 700P09</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Módulo%20de%20presión%20Fluke%20700P09" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="instrumentacion-industrial" data-descripcion="Equipo diseñado para evaluar el estado de maquinaria mediante medición de vibraciones. Permite detectar desgaste en rodamientos, desbalance y fallas mecánicas, facilitando el mantenimiento predictivo.">
+  <img src="images/fluke_805.jpg" alt="Medidor de vibraciones Fluke 805 FC">
+  <h3>Medidor de vibraciones</h3>
+  <p>Fluke 805 FC</p>
+  <p class="precio">$40.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Medidor%20de%20vibraciones%20Fluke%20805" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= TEMPERATURA Y TERMOGRAFÍA ================= -->
+
+<div class="card" data-categoria="temperatura-termografia" data-descripcion="Dispositivo que permite visualizar diferencias de temperatura mediante imágenes térmicas. Ideal para detectar sobrecargas, falsos contactos y puntos calientes en tableros eléctricos y equipos industriales.">
+  <img src="images/camara_termografica.jpg" alt="Cámara termográfica">
+  <h3>Cámara termográfica</h3>
+  <p>Inspección térmica</p>
+  <p class="precio">$40.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Cámara%20termográfica" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="temperatura-termografia" data-descripcion="Permite medir temperatura sin contacto mediante láser. Útil para inspecciones rápidas en equipos eléctricos, motores y superficies calientes.">
+  <img src="images/termometro_infrarojo.jpg" alt="Termómetro infrarrojo">
+  <h3>Termómetro infrarrojo</h3>
+  <p>Medición sin contacto</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Termómetro%20infrarrojo" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="temperatura-termografia" data-descripcion="Equipo de medición por contacto que permite obtener lecturas precisas de temperatura en líquidos, superficies o componentes. Ideal para uso técnico en terreno.">
+  <img src="images/termometro_digital.jpg" alt="Termómetro digital">
+  <h3>Termómetro digital</h3>
+  <p>Sonda de contacto</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Termómetro%20digital%20de%20sonda" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= ENSAYOS Y SEGURIDAD ================= -->
+
+<div class="card" data-categoria="ensayos-seguridad" data-descripcion="Herramienta de seguridad que detecta la presencia de tensión eléctrica sin contacto directo. Fundamental para trabajos en redes eléctricas y verificación antes de intervenir equipos.">
+  <img src="images/detector_alto_voltaje.jpg" alt="Detector alto voltaje">
+  <h3>Detector alto voltaje</h3>
+  <p>Seguridad eléctrica</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Detector%20de%20alto%20voltaje" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="ensayos-seguridad" data-descripcion="Equipo utilizado para medir resistencia de aislamiento en cables, motores y equipos eléctricos. Permite realizar pruebas con altos voltajes para evaluar el estado del aislamiento y prevenir fallas.">
+  <img src="images/megohmetro.jpg" alt="Megóhmetro METREL">
+  <h3>Megóhmetro / Tester</h3>
+  <p>Aislación METREL</p>
+  <p class="precio">$60.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Megóhmetro%20METREL" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= ROTACIÓN Y REDES ================= -->
+
+<div class="card" data-categoria="rotacion-redes" data-descripcion="Permite verificar el orden de las fases (L1, L2, L3) en sistemas trifásicos y detectar fases invertidas o faltantes. Esencial para evitar daños en motores eléctricos.">
+  <img src="images/secuencimetro.jpg" alt="Secuencímetro">
+  <h3>Secuencímetro</h3>
+  <p>Detector de fases</p>
+  <p class="precio">Consultar</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Detector%20de%20secuencia%20de%20fases" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="rotacion-redes" data-descripcion="Equipo que permite rastrear e identificar cables de red o eléctricos, incluso en instalaciones complejas. Ideal para mantenimiento, instalación y diagnóstico de cableado.">
+  <img src="images/localizador_de_cables.jpg" alt="Localizador de cables Fluke">
+  <h3>Localizador de cables</h3>
+  <p>Fluke IntelliTone</p>
+  <p class="precio">$15.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Localizador%20Fluke%20IntelliTone" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= MEDIDOR EN GENERAL ================= -->
+
+<div class="card" data-categoria="medidor-general" data-descripcion="Permite medir distancias con alta precisión utilizando tecnología láser. Incluye funciones como cálculo de área, volumen y mediciones indirectas. Ideal para trabajos en terreno y levantamientos técnicos.">
+  <img src="images/fluke_424d.jpg" alt="Medidor láser Fluke 424D">
+  <h3>Medidor láser</h3>
+  <p>Fluke 424D</p>
+  <p class="precio">$15.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Medidor%20láser%20Fluke%20424D" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- ================= OTROS EQUIPOS (Mantenidos del catálogo anterior) ================= -->
+
+<div class="card" data-categoria="ensayos-seguridad" data-descripcion="Medidor de baja resistencia ideal para verificar contactos en interruptores, uniones de cables y conexiones de barras con resultados altamente confiables.">
+  <img src="images/aemc_6250.jpg" alt="Micro-ohmímetro AEMC 6250">
+  <h3>Micro-ohmímetro</h3>
+  <p>AEMC 6250</p>
+  <p class="precio">$50.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Micro-ohmímetro%20AEMC" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="ensayos-seguridad" data-descripcion="Equipo robusto de grado industrial para mediciones de muy baja resistencia, inyectando altas corrientes para pruebas exigentes en terreno.">
+  <img src="images/megger_dlro200.jpg" alt="Micro-ohmímetro industrial Megger">
+  <h3>Micro-ohmímetro industrial</h3>
+  <p>Megger DLRO200</p>
+  <p class="precio">$100.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Micro-ohmímetro%20Megger" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="ensayos-seguridad" data-descripcion="Sistema de prueba de muy baja frecuencia diseñado específicamente para certificar el estado del aislamiento en tendidos de cables de media y alta tensión.">
+  <img src="images/equipo_vlf_hipot.jpg" alt="Equipo VLF Hipot">
+  <h3>Equipo VLF Hipot</h3>
+  <p>Alta tensión</p>
+  <p class="precio">$120.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Equipo%20VLF%20Hipot" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="medicion-electrica" data-descripcion="Instrumento avanzado para trazar la curva I-V y verificar con exactitud el rendimiento y posibles fallas en instalaciones de paneles fotovoltaicos.">
+  <img src="images/ht_i_v600.jpg" alt="Analizador solar HT I-V600">
+  <h3>Analizador solar</h3>
+  <p>HT I-V600</p>
+  <p class="precio">$80.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Analizador%20solar%20HT" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<div class="card" data-categoria="medidor-general" data-descripcion="Instrumento clave para medir la iluminancia en áreas de trabajo, garantizando el cumplimiento de las normativas de seguridad laboral vigentes.">
+  <img src="images/uni_t_ut382.jpg" alt="Luxómetro UNI-T UT382">
+  <h3>Luxómetro</h3>
+  <p>UNI-T UT382</p>
+  <p class="precio">$10.000/día</p>
+  <a href="https://wa.me/56979422841?text=Hola,%20me%20interesa%20arrendar%20el%20equipo:%20Luxómetro%20UNI-T" class="btn-arrendar" target="_blank">Arrendar</a>
+</div>
+
+<!-- MENSAJE DE SIN RESULTADOS -->
+<div id="noResultsMsg" class="no-results">
+  <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="11" cy="11" r="8"></circle>
+    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    <line x1="8" y1="8" x2="14" y2="14"></line>
+    <line x1="14" y1="8" x2="8" y2="14"></line>
+  </svg>
+  <h2>Equipo no encontrado</h2>
+  <p>No tenemos equipos que coincidan con tu búsqueda. Intenta con otros términos o cambia la categoría.</p>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contacto">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>Contacto</h4>
+      <p>📞 +56 9 7942 2841</p>
+      <p>Lunes a Viernes: 08:00 - 18:00</p>
+    </div>
+    <div class="footer-section">
+      <h4>Correo Electrónico</h4>
+      <p>✉️ contacto@tuempresa.cl</p>
+    </div>
+    <div class="footer-section">
+      <h4>Dirección</h4>
+      <p>📍 Concepción - Coronel - San Pedro</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 HF Arriendo de Equipos Eléctricos. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- BOTÓN WHATSAPP -->
+<a class="whatsapp" href="https://wa.me/56979422841" target="_blank" title="Contáctanos por WhatsApp">
+  <svg width="35" height="35" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.031 0C5.466 0 0 5.46 0 12.016C0 14.116 0.553 16.143 1.583 17.935L0 24L6.19 22.385C7.915 23.32 9.92 23.826 12.025 23.826C18.59 23.826 24.055 18.366 24.055 11.811C24.055 8.636 22.825 5.646 20.575 3.411C18.326 1.176 15.301 0 12.031 0ZM12.031 21.826C10.231 21.826 8.51 21.341 6.996 20.446L6.64 20.246L3.02 21.196L3.985 17.65L3.765 17.276C2.785 15.716 2.26 13.901 2.26 12.016C2.26 6.631 6.645 2.246 12.035 2.246C14.646 2.246 17.086 3.266 18.931 5.111C20.776 6.956 21.8 9.381 21.8 12.021C21.795 17.406 17.415 21.826 12.031 21.826ZM17.4 14.471C17.105 14.321 15.65 13.606 15.385 13.511C15.12 13.416 14.925 13.366 14.73 13.661C14.535 13.956 13.975 14.616 13.8 14.811C13.625 15.006 13.445 15.031 13.15 14.881C12.855 14.731 11.895 14.336 10.765 13.326C9.885 12.536 9.29 11.556 9.115 11.261C8.94 10.966 9.095 10.806 9.245 10.661C9.38 10.531 9.545 10.321 9.69 10.151C9.835 9.981 9.885 9.861 9.985 9.666C10.085 9.471 10.035 9.296 9.96 9.151C9.885 9.006 9.29 7.536 9.045 6.941C8.805 6.361 8.56 6.441 8.38 6.426C8.215 6.411 8.02 6.411 7.825 6.411C7.63 6.411 7.335 6.486 7.09 6.781C6.845 7.076 6.16 7.641 6.16 8.796C6.16 9.951 7.11 11.066 7.255 11.261C7.4 11.456 8.94 13.826 11.3 14.846C11.86 15.086 12.295 15.241 12.635 15.351C13.195 15.531 13.7 15.501 14.095 15.431C14.545 15.351 15.485 14.846 15.68 14.286C15.875 13.726 15.875 13.256 15.8 13.156C15.725 13.056 15.53 13.006 15.235 12.856Z"/>
+  </svg>
+</a>
+
+<!-- BOTÓN VOLVER ARRIBA -->
+<button id="btnVolverArriba" class="volver-arriba" title="Volver arriba">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5M5 12l7-7 7 7"/>
+  </svg>
+</button>
+
+<!-- MODAL DE DETALLES -->
+<div id="equipoModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <img id="modalImg" src="" alt="Equipo">
+    <h3 id="modalTitle">Nombre</h3>
+    <p id="modalDesc" class="desc">Descripción...</p>
+    <p id="modalPrice" class="precio">$0/día</p>
+    <a id="modalWaBtn" href="#" class="btn-arrendar" target="_blank">Arrendar por WhatsApp</a>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Lógica de la barra de búsqueda y filtros
+    const searchInput = document.getElementById("searchInput");
+    const categoryFilter = document.getElementById("categoryFilter");
+    const cards = document.querySelectorAll(".card");
+    const noResultsMsg = document.getElementById("noResultsMsg");
+
+    function filterEquipos() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedCategory = categoryFilter.value;
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const title = card.querySelector("h3").innerText.toLowerCase();
+        const desc = card.querySelector("p").innerText.toLowerCase();
+        const category = card.getAttribute("data-categoria");
+        
+        const matchesSearch = title.includes(searchTerm) || desc.includes(searchTerm);
+        const matchesCategory = selectedCategory === "todas" || category === selectedCategory;
+
+        if (matchesSearch && matchesCategory) {
+          card.style.display = "flex";
+          visibleCount++;
+        } else {
+          card.style.display = "none";
+        }
+      });
+
+      // Mostrar mensaje si no hay resultados
+      noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
+    }
+
+    searchInput.addEventListener("input", filterEquipos);
+    categoryFilter.addEventListener("change", filterEquipos);
+
+    // Lógica del Modal (Ventana Emergente)
+    const modal = document.getElementById("equipoModal");
+    const closeModal = document.querySelector(".close-btn");
+
+    cards.forEach(card => {
+      card.addEventListener("click", function(e) {
+        // Si el usuario hace clic directamente en el botón "Arrendar" original, no abrimos el modal
+        if (e.target.classList.contains("btn-arrendar")) return;
+
+        // Extraer los datos de la tarjeta clickeada
+        document.getElementById("modalTitle").innerText = this.querySelector("h3").innerText;
+        document.getElementById("modalImg").src = this.querySelector("img").src;
+        document.getElementById("modalPrice").innerText = this.querySelector(".precio").innerText;
+        document.getElementById("modalDesc").innerText = this.getAttribute("data-descripcion");
+        document.getElementById("modalWaBtn").href = this.querySelector(".btn-arrendar").href;
+
+        // Adaptar el botón si está marcado como arrendado
+        const waBtn = document.getElementById("modalWaBtn");
+        if (this.classList.contains("arrendado")) {
+          waBtn.innerText = "No disponible actualmente";
+          waBtn.style.background = "#7f8c8d";
+          waBtn.style.pointerEvents = "none";
+        } else {
+          waBtn.innerText = "Arrendar por WhatsApp";
+          waBtn.style.background = "";
+          waBtn.style.pointerEvents = "";
+        }
+
+        // Mostrar el modal
+        modal.style.display = "flex";
+      });
+    });
+
+    // Cerrar el modal al hacer clic en la X o fuera del contenido
+    closeModal.addEventListener("click", () => modal.style.display = "none");
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) modal.style.display = "none";
+    });
+
+    // Lógica del botón Volver Arriba
+    const btnVolverArriba = document.getElementById("btnVolverArriba");
+    
+    window.addEventListener("scroll", function() {
+      // Muestra el botón si bajamos más de 300px
+      if (window.scrollY > 300) {
+        btnVolverArriba.style.display = "flex";
+      } else {
+        btnVolverArriba.style.display = "none";
+      }
+    });
+
+    btnVolverArriba.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" }); // Sube suavemente
+    });
+  });
+</script>
+</body>
+</html>
